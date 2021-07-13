@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--  site meta-data  -->
+    <meta charset="UTF-8">
+    <title>Bankamon</title>
+
+    <!--  custom CSS  -->
+    <link rel="stylesheet" href="static/css/style.css">
+
+    <!--  Bootstrap   -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+          integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body class="bg-color">
+<!-- Header-->
+<header>
+    <!--  Home Page Nav Bar  -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg ">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
+                    aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarToggler">
+                <a class="navbar-brand" href="#"
+                   style="border: 2px #FFFFFF solid;border-radius: 50%; padding: 5px;">BM</a>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active-page" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="src/php/account.php">Account</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="src/php/customers.php">Customers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="src/php/transaction.php">Transactions</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<!-- Header-->
+
+<!-- Main -->
+<main id="main">
+    <!--  Home Page Content  -->
+    <div class="container" id="main-container">
+        <h1>Bankamon</h1>
+        <p class="lead text-light card-text">A bank for quick transactions</p>
+        <div class="cards">
+            <div class="left-card">
+                <h3>New here?</h3>
+                <p class="card-text">No worries, you don't need an account to transfer your money but just make sure that the receiver's
+                    account details are available in the database.</p>
+                <div class="text-center">
+                    <form action="src/php/account.php" method="post">
+                        <input type="submit" name="get_started" value="Get Started" class="btn btn-primary me-2">
+                    </form>
+                </div>
+            </div>
+            <div class="right-card">
+                <h3>Don't believe us?</h3>
+                <p class="card-text">We do agree that trusting us might be difficult for you but we do have the proof of previous
+                    successful transactions to convince you.</p>
+                <div class="text-center">
+                    <form action="src/php/transaction.php" method="post">
+                        <input type="submit" name="view_history" value="View History" class="btn btn-primary me-2">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<!-- Main -->
+
+<!-- Footer -->
+<footer class="bg-dark text-center text-white footer">
+    <div class="text-center p-3" style="background-image: linear-gradient(to bottom, #153E90, #03256C);padding: 10px;">
+
+        <!-- Google -->
+        <a class="btn btn-outline-light btn-floating m-1" href="mailto:nkrishnaraj0907@gmail.com" role="button"
+           target="_blank"><i class="fab fa-google"></i
+        ></a>
+
+        <!-- Instagram -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/kodereaper/
+" role="button"
+           target="_blank"><i class="fab fa-instagram"></i
+        ></a>
+
+        <!-- Linkedin -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/n-krishna-raj-746688127/
+" role="button"
+           target="_blank"><i class="fab fa-linkedin-in"></i
+        ></a>
+
+        <!-- Github -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/kode-logger" role="button"
+           target="_blank"><i class="fab fa-github"></i
+        ></a>
+        <p style="font-family: 'Prompt', sans-serif; margin: 10px 0 0 0;">© 2021 Copyright: N.KRISHNA RAJ (JUL21 Intern)
+            @
+            The Sparks
+            Foundation</p>
+    </div>
+</footer>
+<!-- Footer -->
+
+</body>
+</html>
