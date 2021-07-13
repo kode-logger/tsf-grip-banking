@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&family=Encode+Sans+SC&family=Noto+Sans&family=Roboto:wght@100&family=Prompt&family=Quicksand&display=swap');
+
+
+:root {
+    --bg-color: whitesmoke;
+    --blue-light-palette: #0E49B5;
+    --blue-dark-palette: #153E90;
+}
+
+
+nav {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: larger;
+    padding: 40px;
+    background-image: linear-gradient(to right, var(--blue-dark-palette), var(--blue-light-palette));
+}
+
+.nav-item {
+    padding: 1px 15px 1px 15px;
+    font-size: 20px;
+    margin: 2px 5px 2px 5px;
+}
+
+.active-page {
+    color: var(--blue-dark-palette) !important;
+    background-color: var(--bg-color);
+    border-radius: 8px;
+    box-shadow: inset 0 10px 20px -4px rgba(0, 0, 0, 0.25);
+}
+
+h1 {
+    text-align: center;
+    color: #FFFFFF;
+    border-bottom: 2px white solid;
+    margin-right: 25%;
+    margin-left: 25%;
+    padding: 5px 5px 10px 5px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.bg-color {
+    background-color: var(--bg-color);
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    margin: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.left-card {
+    order: 1;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: inset 0 10px 20px -4px rgba(0, 0, 0, 0.25);
+    margin-right: 25px;
+    width: 45%;
+    padding: 10px;
+}
+
+.right-card {
+    order: 2;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: inset 0 10px 20px -4px rgba(0, 0, 0, 0.25);
+    margin-left: 25px;
+    width: 45%;
+    padding: 10px;
+}
+
+.center-card {
+    order: 1;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: inset 0 10px 20px -4px rgba(0, 0, 0, 0.25);
+    width: 70%;
+    padding: 5px;
+    display: flex;
+}
+
+.cards h3 {
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Encode Sans SC', sans-serif;
+}
+
+.cards p {
+    font-family: 'Noto Sans', sans-serif !important;
+    padding: 20px;
+    margin: 20px 20px 10px 20px;
+}
+
+#main-container {
+    background-color: var(--blue-dark-palette);
+    padding: 30px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 10px 10px -10px #000000;
+    -moz-box-shadow: 0 10px 10px -10px #000000;
+    box-shadow: 0 10px 10px -10px #000000;
+}
+
+.card-text {
+    font-family: 'Noto Sans', sans-serif;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#main-container li {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
+}
+
+#main-container ul {
+    margin-top: 20px;
+    margin-left: 20%;
+}
+
+.btn-primary {
+    background-color: var(--blue-light-palette) !important;
+    margin: 0 5px 5px 5px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px !important;
+    overflow: hidden;
+}
+
+#main {
+    min-height: calc(100vh - 29vh);
+    margin: 20px 0 20px 0;
+}
+
+#profile-icon {
+    display: block;
+    width: 50%;
+    margin: 10px auto 20px;
+}
+
+#createBtn {
+    display: block;
+    margin: 20px 25%;
+    width: 50%;
+    background-color: #54E346 !important;
+    border: #54E346 !important;
+}
+
+#balance-display, #gender-display, #name-display {
+    padding: 5px;
+    margin: 2px;
+    text-align: center;
+    font-family: 'Prompt', sans-serif !important;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+#createForm{
+    margin: 10px;
+}
