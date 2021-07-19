@@ -173,14 +173,15 @@ function addAccountDB(): bool
                     if (isset($_POST['submit']) && strlen($_POST['name']) > 0 && strlen($_POST['email']) > 0) {
                         if (!addAccountDB()) {
                             ?>
-                            <div class="alert alert-danger alert-dismissible fade show" role="alert"> Email already in Use
+                            <div class="alert alert-danger alert-dismissible fade show" role="alert"> Email already in
+                                Use
                                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
                                 </button>
                             </div>
                             <?php
-                        } else {
+                        } else
                             echo "<script>window.location.href='../php/customers.php'</script>";
-                        }
+
                     }
                     ?>
                 </div>
