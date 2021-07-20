@@ -118,7 +118,7 @@ function getCustomers()
                 <h5 class="display-5" style="margin:20px 10px;">To</h5>
                 <div class="transfer-text">
                     <div class="form-group">
-                        <select class="form-select" id="rid" name="rid">
+                        <select class="form-select" id="rid" name="rid" required>
                             <option selected disabled value="-1">Select a customer</option>
                             <?php getCustomers(); ?>
                         </select>
@@ -127,7 +127,7 @@ function getCustomers()
                         <label for="amount" class="form-label col-2"></label>
                         <div class="col-lg-8">
                             <input type="number" class="form-control input-lg" id="amount" name="amount"
-                                   placeholder="Enter Transfer Amount">
+                                   placeholder="Enter Transfer Amount" required>
                         </div>
                     </div>
                     <div class="form-group-row">
