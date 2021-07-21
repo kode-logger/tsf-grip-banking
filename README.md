@@ -1,2 +1,13 @@
 # tsf-grip-banking
-The Sparks Foundation, Graduate Rotational Internship Program, Task-1: Banking website with only money transfer feature
+
+Company/Organisation: **The Sparks Foundation**
+
+Program: **Graduate Rotational Internship Program**
+
+Job: **Web Development Intern**
+
+Task-1: **Basic Banking website with only money transfer between multiple users**
+
+## Screenshots
+
+Will be added soon !
